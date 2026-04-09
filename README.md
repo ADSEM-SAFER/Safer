@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+      OneSignal.init({
+        appId: "acbaed25-51b7-4480-b827-e67d6ef9c48c",
+      });
+
+      OneSignal.getUserId(function(userId) {
+        document.body.innerHTML = userId;
+      });
+    });
+  </script>
+</head>
+<body>
+Cargando...
+</body>
+</html>
