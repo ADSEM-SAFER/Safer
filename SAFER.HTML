@@ -10,7 +10,7 @@
       });
 
       OneSignal.getUserId(function(userId) {
-        document.body.innerHTML = userId;
+        window.AppInventor.setWebViewString(userId);
       });
     });
   </script>
